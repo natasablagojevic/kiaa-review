@@ -7,6 +7,8 @@
 
 using namespace std;
 
+#define INF numeric_limits<int>::max()
+
 struct Graf
 {
     int V;
