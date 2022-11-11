@@ -17,7 +17,7 @@ void build(vector<int> &a, vector<int> &tree, int k, int x, int y)
     build(a, tree, 2*k, x, s);
     build(a, tree, 2*k + 1, s + 1, y);
 
-    tree[k] = tree[2*k] + tree[2*k + 1];
+    tree[k] = min(tree[2*k], tree[2*k + 1]);
 }
 
 int min_of_range(vector<int> &tree, int k, int x, int y, int a, int b)
