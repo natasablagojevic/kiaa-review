@@ -76,8 +76,8 @@ bool je_povezan(Graf &g)
 
 /* 
     0 -> nije
-    1 -> ciklus
-    2 -> put
+    1 -> put
+    2 -> ciklus
  */
 int ojler(Graf &g)
 {
@@ -93,7 +93,16 @@ int ojler(Graf &g)
 
 int main()
 {
+    Graf g;
 
+    //  ciklus:
+    inicjalizuj_graf(g, 3);
+    dodaj_granu(g, 0, 1);
+    dodaj_granu(g, 1, 2);
+    dodaj_granu(g, 2, 0);
+
+
+    cout << (ojler(g) == 0 ? "nije ojler" : (ojler(g) == 1 ? "put" : "ciklus")) << endl;
 
 
     return 0;
