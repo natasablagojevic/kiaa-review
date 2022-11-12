@@ -85,13 +85,18 @@ int main()
 {
     Graf g;
 
-    inicjalizuj_graf(g, 5);
+    // inicjalizuj_graf(g, 5);
+    // dodaj_granu(g, 0, 1);
+    // dodaj_granu(g, 1, 2);
+    // dodaj_granu(g, 2, 3);
+    // dodaj_granu(g, 2, 4);
+    // dodaj_granu(g, 3, 0);
+    // dodaj_granu(g, 4, 2);
+
+    inicjalizuj_graf(g, 4);
     dodaj_granu(g, 0, 1);
     dodaj_granu(g, 1, 2);
     dodaj_granu(g, 2, 3);
-    dodaj_granu(g, 2, 4);
-    dodaj_granu(g, 3, 0);
-    dodaj_granu(g, 4, 2);
 
     cout << boolalpha << kosaradzu(g, 0) << endl;
 
