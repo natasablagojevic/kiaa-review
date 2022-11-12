@@ -94,12 +94,25 @@ int ojler(Graf &g)
 int main()
 {
     Graf g;
-
+    
+    /* 
     //  ciklus:
     inicjalizuj_graf(g, 3);
     dodaj_granu(g, 0, 1);
     dodaj_granu(g, 1, 2);
-    dodaj_granu(g, 2, 0);
+    dodaj_granu(g, 2, 0); 
+    */
+
+    //  put:
+    inicjalizuj_graf(g, 5);
+    dodaj_granu(g, 0, 1);
+    dodaj_granu(g, 0, 2);
+    dodaj_granu(g, 0, 3);
+    dodaj_granu(g, 1, 3);
+    dodaj_granu(g, 1, 2);
+    dodaj_granu(g, 2, 3);
+    dodaj_granu(g, 2, 4);
+    dodaj_granu(g, 3, 4);
 
 
     cout << (ojler(g) == 0 ? "nije ojler" : (ojler(g) == 1 ? "put" : "ciklus")) << endl;
