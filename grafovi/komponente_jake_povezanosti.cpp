@@ -80,8 +80,24 @@ void DFS(Graf &g, int u)
 
 int main()
 {
+    Graf g;
 
+    inicjalizuj_graf(g, 8);
+    dodaj_granu(g, 0, 1);
+    dodaj_granu(g, 0, 2);
+    dodaj_granu(g, 1, 0);
+    dodaj_granu(g, 1, 3);
+    dodaj_granu(g, 2, 3);
+    dodaj_granu(g, 3, 4);
+    dodaj_granu(g, 3, 5);
+    dodaj_granu(g, 4, 2);
+    dodaj_granu(g, 4, 5);
+    dodaj_granu(g, 4, 6);
+    dodaj_granu(g, 5, 7);
+    dodaj_granu(g, 6, 5);
+    dodaj_granu(g, 7, 6);
 
+    DFS(g, 0);
 
     return 0;
 }
