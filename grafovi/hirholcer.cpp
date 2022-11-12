@@ -64,9 +64,11 @@ int main()
     Graf g;
 
     inicjalizuj_graf(g, 6);
+    
     dodaj_granu(g, 0, 1);
     dodaj_granu(g, 0, 2);
     dodaj_granu(g, 1, 1);
+    dodaj_granu(g, 1, 3);
     dodaj_granu(g, 1, 3);
     dodaj_granu(g, 2, 0);
     dodaj_granu(g, 2, 1);
